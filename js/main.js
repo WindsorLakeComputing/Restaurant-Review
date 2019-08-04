@@ -15,7 +15,7 @@ _registerServiceWorker = () => {
   });
 };
 
-_registerServiceWorker();
+//_registerServiceWorker();
 
 
 /**

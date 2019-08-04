@@ -2,38 +2,38 @@
 /* CSS Document */
 
 body,td,th,p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
-	line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+  line-height: 1.5;
 }
 body {
-	background-color: #fdfdfd;
-	margin: 0;
-	position:relative;
+  background-color: #fdfdfd;
+  margin: 0;
+  position:relative;
 }
 ul, li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
 }
 a {
-	color: orange;
-	text-decoration: none;
+  color: orange;
+  text-decoration: none;
 }
 a:hover, a:focus {
-	color: #3397db;
-	text-decoration: none;
+  color: #3397db;
+  text-decoration: none;
 }
 a img{
-	border: none 0px #fff;
+  border: none 0px #fff;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 #maincontent {
   background-color: #f3f3f3;
@@ -139,18 +139,6 @@ nav h1 a {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-/* ======================
-#restaurants-list li {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  font-family: Arial,sans-serif;
-  margin: 15px;
-  height: 380px;
-  padding: 0 30px 25px;
-  text-align: left;
-  width: 100%;
-}
-*/
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: flex;
@@ -193,8 +181,6 @@ nav h1 a {
   width: 380px;
   height: 380px;
 }
-
-
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -247,7 +233,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 90%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -268,6 +254,22 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-device-width: 1940px) {
+#restaurant-img {
+    height: 200px;
+    width: auto;    
+  }
+.inside #map-container {
+  width:40%;
+}
+@media only screen and (max-device-width: 512px) {
+#restaurant-img {
+    height: 200px;
+    width: auto;    
+  }
+.inside #map-container {
+  width:35%;
 }
 #reviews-list li {
   background-color: #fff;
