@@ -1,14 +1,16 @@
 const staticCacheName = 'restaurant-static';
-/**
+
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
       return cache.addAll([
         '/',
-        'main.js',
+        '/js/main.js',
         'leaflet.js',
-        'dbhelper.js',
-        'imgs/icon.png'
+        '/js/dbhelper.js',
+        '/img/*',
+        'index.html',
+        'restaurant.html'
       ]);
     })
   );
@@ -36,4 +38,3 @@ self.addEventListener('fetch', function(event) {
     })
   );
 });
-*/
