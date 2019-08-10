@@ -143,8 +143,8 @@ nav h1 a {
   background-color: #ccc;
   display: flex;
   margin: 0;
+  max-height: 175px;
   max-width: 100%;
-  height: auto;
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -184,19 +184,19 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+.inside { 
+  margin: auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 400px;
+  overflow-x: hidden !important;
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  height: 300px;
+  width: 100%;
+  margin: auto;
 }
 .inside #map {
   background-color: #ccc;
@@ -235,7 +235,7 @@ nav h1 a {
   text-transform: uppercase;
   width: 90%;
 }
-#restaurant-container, #reviews-container {
+#restaurant-container{
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
@@ -247,15 +247,20 @@ nav h1 a {
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
-  font-weight: 300;
-  letter-spacing: -1px;
-  padding-bottom: 1pt;
+  width: 100%;
+  height: auto;  
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  margin: auto;
+
 }
 #reviews-list {
   margin: 0;
   padding: 0;
 }
-@media only screen and (max-device-width: 1940px) {
+
+@media screen and (max-device-width: 1940px) {
 #restaurant-img {
     height: 200px;
     width: auto;    
@@ -263,7 +268,8 @@ nav h1 a {
 .inside #map-container {
   width:40%;
 }
-@media only screen and (max-device-width: 512px) {
+}
+@media screen and (max-device-width: 512px) {
 #restaurant-img {
     height: 200px;
     width: auto;    
@@ -288,3 +294,5 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+}
+
